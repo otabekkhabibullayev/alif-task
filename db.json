@@ -1,0 +1,60 @@
+{
+  "list": [
+    {
+      "author": "Sea",
+      "content": "Never give up",
+      "genre": "Эпос",
+      "date": "00:26",
+      "id": 2
+    },
+    {
+      "author": "Shadiko",
+      "content": "Smile",
+      "genre": "Эпос",
+      "date": "19:51",
+      "id": 3
+    },
+    {
+      "author": "Yall",
+      "content": "Dance with me one more time",
+      "genre": "Лирика",
+      "date": "19:40",
+      "id": 4
+    },
+    {
+      "author": "Veealwayshere ",
+      "content": "Stay",
+      "genre": "Драма",
+      "date": "00:26",
+      "id": 5
+    },
+    {
+      "author": "Shadiko",
+      "content": "You look like my favorite color. ",
+      "genre": "Драма",
+      "date": "00:26",
+      "id": 6
+    },
+    {
+      "author": "Отабек",
+      "content": "Научись любить",
+      "genre": "Эпос",
+      "date": "00:29",
+      "id": 7
+    },
+    {
+      "author": "Shadiko",
+      "content": "Твоя каждая улыбка придает еще больше шарма весне.  Улыбайся! 🙃",
+      "genre": "Лирика",
+      "date": "00:35",
+      "id": 8
+    },
+    {
+      "author": "Отабек",
+      "content": "Хочу ",
+      "genre": "Лирика",
+      "date": "01:32",
+      "id": 9
+    }
+  ]
+}

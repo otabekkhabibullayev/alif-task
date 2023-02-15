@@ -13,7 +13,14 @@
         </a-select>
       </div> -->
       <div class="table-top-item">
-        <a-modal :footer="null" v-model="visible" title="Создать цитату">
+        <a-modal :header="null" :footer="null" v-model="visible">
+          <div class="modal-header">
+            <h3>Создать цитату</h3>
+            <a-icon
+              type="close"
+              @click="$store.commit('list/setVisible', false)"
+            />
+          </div>
           <the-form></the-form>
         </a-modal>
         <button @click="createQuote">Создать</button>
@@ -47,13 +54,12 @@
 
               <a-popconfirm
                 placement="topLeft"
-                ok-text="Ha"
-                cancel-text="Yo'q"
+                ok-text="Да"
+                cancel-text="Нет"
                 @confirm="onDelete(item.id)"
               >
                 <template #title>
-                  Siz chindan ham ushbu foydalanuvchini o'chirishni xoxlaysizmi
-                  ?
+                  Вы действительно хотите удалить цитату
                 </template>
 
                 <a-icon type="delete" />
@@ -92,9 +98,11 @@ export default {
   },
   methods: {
     ...mapActions("list", ["fetchList", "deleteData"]),
-    async onDelete(id) {
+    onDelete(id) {
       this.deleteData(id);
-      this.fetchList();
+      setTimeout(() => {
+        this.fetchList();
+      }, 100);
     },
     createQuote() {
       this.$store.commit("list/setVisible", true);

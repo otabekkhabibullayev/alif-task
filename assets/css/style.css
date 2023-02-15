@@ -15,6 +15,20 @@ body {
     padding: 0 15px;
 }
 
+.ant-modal-header {
+    display: none;
+}
+
+.ant-modal-content .ant-modal-close {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .wrapper {
     padding: 120px 0;
 }
